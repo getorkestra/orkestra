@@ -1,0 +1,15 @@
+{
+  "name": "orkestra-free",
+  "description": "Orkestra Free: a manager + parallel worker agents that build websites in isolated git worktrees with strict file ownership.",
+  "owner": {
+    "name": "Jante Creative"
+  },
+  "plugins": [
+    {
+      "name": "orkestra",
+      "source": "./plugins/orkestra",
+      "description": "Orkestra Free: a manager + parallel worker agents that build websites in isolated git worktrees with strict file ownership.",
+      "version": "1.0.0"
+    }
+  ]
+}
