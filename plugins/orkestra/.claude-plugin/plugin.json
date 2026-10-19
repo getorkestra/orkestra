@@ -1,10 +1,13 @@
 {
   "name": "orkestra",
+  "displayName": "Orkestra",
   "version": "1.0.0",
   "description": "Orkestra Free: a manager + parallel worker agents that build websites in isolated git worktrees with strict file ownership.",
   "author": {
     "name": "Orkestra"
   },
+  "homepage": "https://github.com/getorkestra/orkestra",
+  "repository": "https://github.com/getorkestra/orkestra",
   "license": "MIT",
   "keywords": [
     "orchestration",
@@ -12,8 +15,6 @@
     "worktree",
     "parallel",
     "multi-agent",
-    "website",
-    "webapp",
-    "mobile"
+    "website"
   ]
 }

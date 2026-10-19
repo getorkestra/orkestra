@@ -2,9 +2,9 @@
 
 **A manager and a team of parallel AI workers for Claude Code, for building websites.** One command plans the job, splits it into tasks with strict file ownership, runs workers side by side in isolated git worktrees, verifies their work with real command output, merges it, and runs a read-only audit.
 
-![Orkestra building three pages of a demo site: plan, parallel workers in git worktrees, audit, merge](assets/demo.gif)
+![Orkestra building three pages of a demo site: plan, parallel workers in git worktrees, audit, merge](https://raw.githubusercontent.com/getorkestra/orkestra/main/assets/demo.gif)
 
-A real 8-minute run on a demo site, sped up. [Watch the 36-second video with sound](assets/demo.mp4).
+A real 8-minute run on a demo site, sped up. [Watch the 36-second video with sound](https://github.com/getorkestra/orkestra/blob/main/assets/demo.mp4).
 
 ```
                        YOU
@@ -84,6 +84,19 @@ Plus updates and support. One-time payment, private GitHub repo access:
 - **[Team, $30](https://buy.polar.sh/polar_cl_r5L3eKziwNqKAI3BzGga7oh5fMlkYrnbepwaW2voS4Y)**: up to 10 people in one organization.
 
 After checkout, open the customer portal link in your order email and click **Connect GitHub**: you get an invitation to the private repo with install steps.
+
+## What it changes on your machine
+
+Orkestra is instructions for Claude Code (skills and agent definitions). It ships no scripts, hooks, MCP servers or binaries, makes no network calls of its own and sends no data anywhere.
+
+- `/orkestra:setup` sets `"worktree": {"baseRef": "head"}` in `~/.claude/settings.json` after saving a timestamped backup next to it, and on Windows runs `git config --global core.longpaths true`. Undo: restore the backup or delete the `worktree` key.
+- In your project, the manager creates `.orkestra/` (plan, quality gate script, lessons) and adds it to `.gitignore`, makes commits on your current branch, and creates temporary git worktrees and branches under `.claude/worktrees/` that it removes after merging.
+- If your project has `node_modules`, workers link it into their worktree (a junction on Windows, a symlink elsewhere) and remove the link before cleanup.
+- Workers and the auditor run the build, lint and test commands your project already has.
+
+## Support
+
+Questions and bugs: [open an issue](https://github.com/getorkestra/orkestra/issues).
 
 ## License
 
