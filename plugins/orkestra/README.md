@@ -2,6 +2,10 @@
 
 **A manager and a team of parallel AI workers for Claude Code, for building websites.** One command plans the job, splits it into tasks with strict file ownership, runs workers side by side in isolated git worktrees, verifies their work with real command output, merges it, and runs a read-only audit.
 
+![Orkestra building three pages of a demo site: plan, parallel workers in git worktrees, audit, merge](assets/demo.gif)
+
+A real 8-minute run on a demo site, sped up. [Watch the 36-second video with sound](assets/demo.mp4).
+
 ```
                        YOU
                         |  /orkestra:site "services, about and contact pages in English and German"
