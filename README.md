@@ -79,6 +79,8 @@ Plus updates and support. One-time payment, private GitHub repo access:
 - **[Solo, $10](https://buy.polar.sh/polar_cl_ViKQBhn3miSAWkpNiJwZ8WvFCy7oDkarqkr4h3QTHba)**: 1 person, unlimited projects, client work included.
 - **[Team, $30](https://buy.polar.sh/polar_cl_r5L3eKziwNqKAI3BzGga7oh5fMlkYrnbepwaW2voS4Y)**: up to 10 people in one organization.
 
+After checkout, open the customer portal link in your order email and click **Connect GitHub**: you get an invitation to the private repo with install steps.
+
 ## License
 
 MIT. See [LICENSE](LICENSE).
